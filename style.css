@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quote {
+    background-color: gray;
+    text-align: center;
+    text-decoration: double;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    padding: 1rem;
+}
+
+.section {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    outline: .3rem solid rgb(229, 228, 228);
+    background-color: white;
+}
+
+.b-bottom {
+    border-bottom: 1px solid black;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.title {
+    line-height: 2;
+}
+
+.c-gray {
+    color: gray;
+}
+
+.c-dgray {
+    color: rgb(61, 61, 61);
+}
+
+.t-underline {
+    text-decoration: underline;
+}
+
+.t-capitalize {
+    text-transform: capitalize;
+}
+
+.quote1 {
+    padding: 1rem;
+    background-color: lightgray;
+    border-left: .3rem solid darkgray;
+}
+
+.section-p {
+    padding: 1rem 0;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    border: .2rem solid rgb(56, 56, 56);
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.75);
+    border-radius: .5rem;
+}
+
+.bg-prominent {
+    background-color: rgb(248, 229, 119);
+}
+
+.b-relative {
+    background-color: rgb(218, 246, 255);
+    position: relative;
+}
+
+.b-absolute {
+    background-color: darkcyan;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.b-bsnone {
+    box-shadow: none;
+    border: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.grid-item {
+    padding: 1rem;
+    background-color: rgb(132, 132, 255);
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.animacion {
+    background-color: red;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    margin: 1rem;
+
+    &:hover {
+        animation: moveRight 5s linear infinite;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    }
+}
+
+.mover {
+    animation: moveRight 5s linear infinite;
+    background-color: green;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+}
+
+/*Dispositivos moviles*/
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(50, 50, 82);
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: .7rem;
+        margin: .7rem;
+    }
+}
